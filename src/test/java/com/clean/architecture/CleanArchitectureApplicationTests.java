@@ -1,4 +1,4 @@
-package com.clean.architecture.helloworld;
+package com.clean.architecture;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
