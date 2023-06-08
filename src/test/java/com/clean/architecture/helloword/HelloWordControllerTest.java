@@ -12,7 +12,6 @@ class HelloWordControllerTest {
 
     @Test
     void sayHelloWorld() {
-        helloWordController = new HelloWordController();
         String result = helloWordController.sayHelloWorld();
         assertEquals("Hello world", result);
     }
