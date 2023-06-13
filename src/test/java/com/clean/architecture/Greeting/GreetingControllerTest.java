@@ -16,7 +16,7 @@ class GreetingControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void greetingControllerShould() {
+    public void greetingControllerShouldImplementInterface() {
         IRequestGreetingController controller = new GreetingController();
         String result = controller.sayHelloWorld();
         assertEquals("Hello world", result);
