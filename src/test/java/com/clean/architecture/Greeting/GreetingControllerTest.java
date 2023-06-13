@@ -18,13 +18,13 @@ class GreetingControllerTest {
     @Test
     public void greetingControllerShouldImplementInterface() {
         IRequestGreetingController controller = new GreetingController();
-        String result = controller.sayHelloWorld();
-        assertEquals("Hello world", result);
+        GreetingResponseModel result = controller.sayHelloWorld();
+        assertEquals("Hello world", result.message());
     }
     @Test
     public void greetingShouldReturnDefaultMessage() {
-        String result = this.restTemplate.getForObject("http://localhost:" + port + "/",
-                String.class);
-        assertEquals("Hello world", result);
+        GreetingResponseModel result = this.restTemplate.getForObject("http://localhost:" + port + "/",
+                GreetingResponseModel.class);
+        assertEquals("Hello world", result.message());
     }
 }
