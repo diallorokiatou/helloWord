@@ -10,6 +10,6 @@ class GreetingEntityTest {
     void uniqueMessage() {
         GreetingEntity  greetingEntity = new GreetingEntity();
         String message = greetingEntity.getMessage();
-        assertEquals("Hello word", message);
+        assertEquals("Hello world", message);
     }
 }
