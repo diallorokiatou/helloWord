@@ -1,5 +1,6 @@
 package com.clean.architecture.Greeting;
 
+import com.clean.architecture.Greeting.adapter.GreetingController;
 import com.clean.architecture.Greeting.port.IRequestGreetingController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

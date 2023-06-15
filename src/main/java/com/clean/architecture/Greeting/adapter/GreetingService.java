@@ -1,5 +1,7 @@
-package com.clean.architecture.Greeting;
+package com.clean.architecture.Greeting.adapter;
 
+import com.clean.architecture.Greeting.GreetingEntity;
+import com.clean.architecture.Greeting.GreetingResponseModel;
 import com.clean.architecture.Greeting.port.IRequestGreetingService;
 
 public class GreetingService implements IRequestGreetingService {
