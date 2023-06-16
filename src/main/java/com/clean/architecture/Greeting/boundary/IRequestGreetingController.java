@@ -1,4 +1,4 @@
-package com.clean.architecture.Greeting.port;
+package com.clean.architecture.Greeting.boundary;
 
 import com.clean.architecture.Greeting.GreetingResponseModel;
 

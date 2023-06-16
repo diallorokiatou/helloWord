@@ -1,7 +1,6 @@
 package com.clean.architecture.Greeting;
 
-import com.clean.architecture.Greeting.adapter.GreetingController;
-import com.clean.architecture.Greeting.port.IRequestGreetingController;
+import com.clean.architecture.Greeting.boundary.IRequestGreetingController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,12 +21,12 @@ class GreetingControllerTest {
     public void shouldImplementInterface() {
         IRequestGreetingController controller = new GreetingController();
         GreetingResponseModel result = controller.sayHelloWorld();
-        assertEquals("Hello world", result.getMessage());
+        assertEquals("Hello world", result.message());
     }
     @Test
     public void shouldReturnDefaultMessage() {
         GreetingResponseModel result = this.restTemplate.getForObject("http://localhost:" + port + "/",
                 GreetingResponseModel.class);
-        assertEquals("Hello world", result.getMessage());
+        assertEquals("Hello world", result.message());
     }
 }
