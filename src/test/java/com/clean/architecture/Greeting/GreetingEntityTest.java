@@ -8,7 +8,7 @@ class GreetingEntityTest {
 
     @Test
     void uniqueMessage() {
-        GreetingEntity  greetingEntity = new GreetingEntity();
+        GreetingEntity  greetingEntity = new GreetingEntity("Hello world");
         String message = greetingEntity.getMessage();
         assertEquals("Hello world", message);
     }

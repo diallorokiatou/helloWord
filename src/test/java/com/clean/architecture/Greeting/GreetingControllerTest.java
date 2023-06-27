@@ -1,6 +1,5 @@
 package com.clean.architecture.Greeting;
 
-import com.clean.architecture.Greeting.boundary.IRequestGreetingController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,7 +18,7 @@ class GreetingControllerTest {
 
     @Test
     public void shouldImplementInterface() {
-        IRequestGreetingController controller = new GreetingController();
+        GreetingController controller = new GreetingController();
         GreetingResponseModel result = controller.sayHelloWorld();
         assertEquals("Hello world", result.message());
     }
